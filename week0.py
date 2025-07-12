@@ -14,5 +14,6 @@
 def dose(needs):
     #YOUR SOLUTION STARTS HERE
 hello
+hi
     #YOUR SOLUTION ENDS HERE
 
