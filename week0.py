@@ -12,7 +12,15 @@
 #expected output: "No medicine given"
 # HINT: using % operator to find remainder may be helpful
 def dose(needs):
-    #YOUR SOLUTION STARTS HERE
+    if sum(needs) > 500 or any(n >= 250 for n in needs):
+        return "No medicine given"
+
+    result = []
+    for value in needs:
+        vitamins = (value + 9) // 10
+        injections = vitamins * 10 - value
+        result.append((vitamins, injections))
+    return result
+
 
     #YOUR SOLUTION ENDS HERE
-
